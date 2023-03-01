@@ -1,0 +1,21 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-film container">
+    <section class="section section-film">
+        <div class="row">
+            <% data.forEach(item => { %>
+                <div class="col-md-3">
+                    <figure class="figure item-div">
+                        <img src="https://via.placeholder.com/200x250" alt="placeholder" class="img-fluid placeholder-image" />
+                        <figcaption class="item-h2">
+                            <a href="/film/<%= item.film_id %>"><%= item.title %></a>
+
+                        </figcaption>
+                    </figure>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

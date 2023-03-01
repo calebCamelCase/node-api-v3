@@ -1,0 +1,17 @@
+<%- include('../partials/header');%>
+
+<main class="main main-single-customer container">
+    <section class="section customer-single-section">
+    <h2 class="single-h2"><%= data.last_name %>, <%= data.first_name %></h2>
+    <div class="row">
+            <div class="customer-single-info">
+                <ul class="customer-single-list list-group">
+                    <li class="customer-single-item list-item"><%= data.email %></li>
+                    <!-- <li class="customer-single-item list-item"><%= data.address_id %></li> -->
+                </ul>
+            </div>
+    </div>
+    </section>
+</main>
+
+<%- include('../partials/footer');%>

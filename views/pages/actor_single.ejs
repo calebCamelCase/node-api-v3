@@ -1,0 +1,26 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-single-actor container">
+    <section class="section actor-single-section">
+        <h2 class="single-h2"><%= data.first_name %> <%= data.last_name %></h2>
+        <div class="row">
+            <div class="col-md-8">
+                <figure class="figure-single-actor item-div">
+                    <img src="https://via.placeholder.com/450x550" alt="placeholder" class="img-fluid placeholder-image" />
+                    <figcaption class="single-actor-h2">
+                        <%= data.first_name %> <%= data.last_name %>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <div class="film-actor-bio">
+                    <p class="bio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reiciendis corrupti quibusdam ratione id nobis ea, quasi rem impedit enim assumenda minus, neque corporis iure sequi dolore eveniet maiores eligendi harum quas maxime. Distinctio molestias totam, magni nobis recusandae incidunt repellat a odio minima dolorum modi, quisquam sequi aliquam cum neque nisi provident earum magnam ipsam consequatur doloribus. Eveniet nemo doloribus at repellat minus sit vitae velit quia aliquid consequatur architecto quis tempore nisi, voluptates distinctio amet reiciendis laborum perspiciatis! Libero laborum temporibus, possimus dolore accusamus hic ab commodi. Distinctio quas tempora est beatae eaque cumque magnam reiciendis? Obcaecati, accusamus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

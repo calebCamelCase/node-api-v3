@@ -1,0 +1,25 @@
+<%- include('../partials/header');%>
+
+<main class="main main-single-film container">
+    <section class="section film-single-section">
+    <h2 class="single-h2"><%= name %></h2>
+    <div class="row">
+        <div class="col-md-8">
+            <img src="https://via.placeholder.com/450x550" alt="placeholder" class="img-fluid film-single-img placeholder-image" />
+        </div>
+        <div class="col-md-4">
+            <div class="film-single-info">
+                <p class="description"><%= data.description %></p>
+                <ul class="film-single-list list-group">
+                    <li class="film-single-item list-item">Rating: <%= data.rating %></li>
+                    <li class="film-single-item list-item">Year: <%= data.release_year %></li>
+                    <li class="film-single-item list-item">Special Features: <%= data.secial_features %></li>
+                    <li class="film-single-item list-item">Rent: $<%= data.rental_rate %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+</main>
+
+<%- include('../partials/footer');%>
